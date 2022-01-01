@@ -1,0 +1,25 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "theory.h"
+#include "demo.h"
+#include "testing.h"
+
+MainWindow::MainWindow(QWidget *parent)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+    ptheory = new Theory();
+    pdemo = new Demo();
+    ptesting = new Testing();
+    ui->tabWidget->addTab(ptheory, "Теория");
+    ui->tabWidget->addTab(pdemo, "Демонстрация");
+    ui->tabWidget->addTab(ptesting, "Тестирование");
+    setWindowTitle("Курсовой проект на тему \"Алгоритм обхода графа в ширину\". Автор: Лиджигоряев Владимир, ДИПРБ-21");
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
