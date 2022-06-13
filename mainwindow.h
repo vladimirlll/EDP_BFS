@@ -2,14 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "Theory/theorywidget.h"
+#include "Demo/demo.h"
+#include "Testing/testing.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
-
-class Theory;
-class Demo;
-class Testing;
 
 class MainWindow : public QMainWindow
 {
@@ -21,7 +20,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    Theory *ptheory;
+    TheoryWidget *ptheory;
     Demo* pdemo;
     Testing *ptesting;
 };

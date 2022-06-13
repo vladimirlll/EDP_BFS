@@ -9,34 +9,52 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    demo.cpp \
-    edge.cpp \
-    graph.cpp \
+    Demo/demo.cpp \
+    Demo/demo.cpp \
+    Demo/edge.cpp \
+    Demo/edge.cpp \
+    Demo/graph.cpp \
+    Demo/graph.cpp \
+    Demo/node.cpp \
+    Demo/node.cpp \
+    Exceptions/filehandleexception.cpp \
+    Testing/question.cpp \
+    Testing/test.cpp \
+    Testing/testing.cpp \
+    Testing/testresult.cpp \
+    Testing/testwgt.cpp \
+    Theory/theory.cpp \
+    Theory/theorypage.cpp \
+    Theory/theorywidget.cpp \
     main.cpp \
-    mainwindow.cpp \
-    node.cpp \
-    testing.cpp \
-    testresult.cpp \
-    testwgt.cpp \
-    theory.cpp
+    mainwindow.cpp
 
 HEADERS += \
-    demo.h \
-    edge.h \
-    graph.h \
-    mainwindow.h \
-    node.h \
-    testing.h \
-    testresult.h \
-    testwgt.h \
-    theory.h
+    Demo/demo.h \
+    Demo/demo.h \
+    Demo/edge.h \
+    Demo/edge.h \
+    Demo/graph.h \
+    Demo/graph.h \
+    Demo/node.h \
+    Demo/node.h \
+    Exceptions/filehandleexception.h \
+    Testing/question.h \
+    Testing/test.h \
+    Testing/testing.h \
+    Testing/testresult.h \
+    Testing/testwgt.h \
+    Theory/theory.h \
+    Theory/theorypage.h \
+    Theory/theorywidget.h \
+    mainwindow.h
 
 FORMS += \
-    demo.ui \
+    Demo/demo.ui \
+    Demo/demo.ui \
+    Testing/testing.ui \
+    Testing/testwgt.ui \
     mainwindow.ui \
-    testing.ui \
-    testwgt.ui \
-    theory.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
